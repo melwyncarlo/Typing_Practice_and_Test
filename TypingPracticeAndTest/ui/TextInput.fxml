@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@res/Styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TypingPracticeAndTest.Controller">
+   <children>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#enterRandomParagraph" prefHeight="50.0" prefWidth="600.0" styleClass="app-buttons" text="Enter a random paragraph" />
+      <TextArea id="input-text-area" fx:id="inputTextArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" promptText="Enter a paragraph here." wrapText="true" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#startTypingTest" prefHeight="50.0" prefWidth="300.0" styleClass="app-buttons" text="Typing Test" />
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#startTypingPractice" prefHeight="50.0" prefWidth="300.0" styleClass="app-buttons" text="Typing Practice" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@res/Styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TypingPracticeAndTest.Controller">
+   <children>
+      <ScrollPane fx:id="typingWindowScrollPane" hbarPolicy="NEVER" minHeight="330.0" minWidth="600.0" vbarPolicy="NEVER">
+         <content>
+            <TextFlow id="typing-window-textflow" fx:id="typingWindowTextflow" maxWidth="555.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextFlow>
+         </content>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </ScrollPane>
+      <HBox prefWidth="200.0">
+         <children>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goBack" onMouseExited="#restoreTypingWindowFocus" prefHeight="60.0" prefWidth="350.0" styleClass="app-buttons" text="Go back" />
+            <ImageView id="timer-icon" fitHeight="50.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res/img/timer_icon.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <HBox.margin>
+                  <Insets left="45.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label id="timer-label" fx:id="timerLabel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="150.0" text="00 : 00 : 00">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>

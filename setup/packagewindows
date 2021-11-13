@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# Copyright 2021 Melwyn Francis Carlo <carlo.melwyn@outlook.com>
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+clear
+
+rm -rf ../package/windows/exe/*
+rm -rf ../package/windows/msi/*
+
+jpackage -d ../package/windows/exe --verbose \
+--type "exe" \
+--app-version "1.0" \
+--icon ../TypingPracticeAndTest/ui/res/img/icon.png \
+--copyright "2021 Melwyn Francis Carlo <carlo.melwyn@outlook.com>" \
+--description "An app for practising, honing, and testing your typing skills" \
+--name "TypingPracticeAndTest" \
+--vendor "Melwyn Francis Carlo" \
+--java-options -Dfilepath=\$APPDIR \
+--input ../jar \
+--module-path ../openjfx/windows/jmod \
+--add-modules javafx.graphics,javafx.fxml,javafx.controls \
+--main-jar TypingPracticeAndTest.jar \
+--win-menu \
+--win-menu-group "Office" \
+--win-per-user-install \
+--win-shortcut
+
+jpackage -d ../package/windows/msi --verbose \
+--type "msi" \
+--app-version "1.0" \
+--icon ../TypingPracticeAndTest/ui/res/img/icon.png \
+--copyright "2021 Melwyn Francis Carlo <carlo.melwyn@outlook.com>" \
+--description "An app for practising, honing, and testing your typing skills" \
+--name "TypingPracticeAndTest" \
+--vendor "Melwyn Francis Carlo" \
+--java-options -Dfilepath=\$APPDIR \
+--input ../jar \
+--module-path ../openjfx/windows/jmod \
+--add-modules javafx.graphics,javafx.fxml,javafx.controls \
+--main-jar TypingPracticeAndTest.jar \
+--win-menu \
+--win-menu-group "Office" \
+--win-per-user-install \
+--win-shortcut
+

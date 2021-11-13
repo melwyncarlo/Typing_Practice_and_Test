@@ -1,0 +1,42 @@
+
+/* Copyright 2021 Melwyn Francis Carlo */
+
+#splash-screen-middle-label
+{
+    -fx-label-padding : 50 0;
+}
+
+#input-text-area
+{
+    -fx-padding   : 10;
+    -fx-font-size : 16;
+}
+
+#timer-label
+{
+    -fx-font-size   : 15;
+    -fx-font-weight : bold;
+}
+
+#typing-window-textflow
+{
+    -fx-padding   : 20;
+}
+
+.app-buttons
+{
+    -fx-font-size : 15;
+    -fx-cursor    : hand;
+}
+
+#scores-data-table
+{
+    -fx-font-size   : 16;
+    -fx-alignment   : CENTER;
+}
+
+.scores-data-table-column
+{
+    -fx-alignment   : CENTER;
+}
+
