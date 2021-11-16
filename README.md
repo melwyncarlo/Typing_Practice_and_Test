@@ -1,4 +1,4 @@
-# Typing_Practice_and_Test
+# Typing Practice and Test
 
 ![Logo](https://github.com/melwyncarlo/Typing_Practice_and_Test/blob/main/TypingPracticeAndTest/ui/res/img/icon.png)
 
